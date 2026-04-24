@@ -12,6 +12,11 @@ import androidx.core.view.WindowInsetsCompat
 import com.loopj.android.http.RequestParams
 
 class Signin : AppCompatActivity() {
+
+    lateinit var responseText: TextView
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -38,7 +43,7 @@ class Signin : AppCompatActivity() {
         }
 
         signinButton.setOnClickListener {
-            val api="https://kbenkamotho.alwaysdata.net/api/signin"
+            val api="https://clate.alwaysdata.net/api/signin"
 
             val data= RequestParams()
 
